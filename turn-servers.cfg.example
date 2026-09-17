@@ -1,0 +1,12 @@
+# Optional TURN servers for the CoopNet Python server.
+# Copy this file to "turn-servers.cfg" and edit.
+#
+# Format (one per line):
+#   host:username:password:port
+#
+# Lines starting with # are comments.
+#
+# Example with the Go TURN server included in this project:
+# 203.0.113.10:coopnet:coopnetpass:3478
+#
+# (Replace 203.0.113.10 by the public IP of the machine running the TURN server)

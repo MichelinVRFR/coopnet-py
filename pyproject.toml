@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coopnet"
+version = "0.1.0"
+description = "Python port of coopnet – signaling server and library for ICE/P2P (originally C++ with libjuice)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "AGPL-3.0-or-later"}
+authors = [
+    {name = "Coop Deluxe community / Python port"}
+]
+dependencies = [
+    "aioice>=0.9.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[project.scripts]
+coopnet-server = "coopnet.server:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["coopnet*"]
